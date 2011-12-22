@@ -9,12 +9,12 @@ chimpx.panel.Home = function(config) {
             ,cls: 'modx-page-header'
             ,id: 'modx-home-header'
         },MODx.getPageStructure([
-        // campaign tab
-        {
-            title: _('chimpx.campaigns')
-            ,bodyStyle: 'padding: 15px;'
-            ,autoHeight: true
-            ,items: [{
+            // campaign tab
+            {
+                title: _('chimpx.campaigns')
+                ,bodyStyle: 'padding: 15px;'
+                ,autoHeight: true
+                ,items: [{
                 html: '<p>'+_('chimpx.intro_msg')+'</p>'
                 ,border: false
             },{
@@ -22,22 +22,38 @@ chimpx.panel.Home = function(config) {
                 ,id: 'chimpx-grid-campaigns'
                 ,preventRender: true
             }]
-        }
-        // list tab
-        ,{
-            title: _('chimpx.lists')
-            ,bodyStyle: 'padding: 15px;'
-            ,autoHeight: true
-            ,items: [{
-                html: '<p>'+_('chimpx.lists_intro_msg')+'</p>'
-                ,border: false
-            },{
-                xtype: 'chimpx-grid-lists'
-                ,id: 'chimpx-grid-lists'
-                ,title: ''
-                ,preventRender: true
-            }]
-        }])]
+            }
+            // list tab
+            ,{
+                title: _('chimpx.lists')
+                ,bodyStyle: 'padding: 15px;'
+                ,autoHeight: true
+                ,items: [{
+                    html: '<p>'+_('chimpx.lists_intro_msg')+'</p>'
+                    ,border: false
+                },{
+                    xtype: 'chimpx-grid-lists'
+                    ,id: 'chimpx-grid-lists'
+                    ,title: ''
+                    ,preventRender: true
+                }]
+            }
+            // members list
+            ,{
+                title: _('chimpx.memberlist')
+                ,bodyStyle: 'padding: 15px;'
+                ,autoHeight: true
+                ,items: [{
+                    html: '<p>'+_('chimpx.memberlist_intro_msg')+'</p>'
+                    ,border: false
+                },{
+                    xtype: 'chimpx-grid-memberlist'
+                    ,id: 'chimpx-grid-memberlist'
+                    ,title: ''
+                    ,preventRender: true
+                }]
+            }
+        ])]
     });
     chimpx.panel.Home.superclass.constructor.call(this,config);
 };
