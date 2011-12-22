@@ -28,5 +28,22 @@ chimpx.grid.Lists = function(config) {
     });
     chimpx.grid.Lists.superclass.constructor.call(this,config);
 };
-Ext.extend(chimpx.grid.Lists,MODx.grid.Grid);
+Ext.extend(chimpx.grid.Lists,MODx.grid.Grid, {
+    getMenu: function(){
+        var m = [{
+                text: _('chimpx.view_member_list')
+                , handler: this.listMembers
+        }]
+        this.addContextMenuItem(m);
+        return true;
+    },
+    listMembers: function(btn, e){
+        if (!this.menu.record || !this.menu.record.id) return false;
+        var r = this.menu.record;
+
+
+
+
+    }
+});
 Ext.reg('chimpx-grid-lists',chimpx.grid.Lists);
