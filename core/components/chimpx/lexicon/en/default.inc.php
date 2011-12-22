@@ -127,6 +127,18 @@ $_lang['chimpx.list_email_type_option'] = 'HTML + text';
 $_lang['chimpx.list_use_awesomebar'] = 'Awesome Bar';
 $_lang['chimpx.list_list_rating'] = 'List rating';
 $_lang['chimpx.list_member_count'] = 'Subscribers';
+$_lang['chimpx.view_member_list'] = 'View List';
+
+// member lists
+$_lang['chimpx.memberlist'] = 'Subscribers';
+$_lang['chimpx.memberlist_intro_msg'] = 'Subscribers Intro Message';
+
+// Member List -- Quick Add Dialog
+$_lang['chimpx.memberlist_quickadd'] = 'Quick Add';
+$_lang['chimpx.memberlist_confirm_title'] = 'Hey, you have permission right?';
+$_lang['chimpx.memberlist_confirm_optin'] = 'This recipient has given me permission to add him/her to my MailChimp Managed List.';
+$_lang['chimpx.memberlist_nooptin_ohnoes_title'] = 'Oh, Do you want to ask for permission?';
+$_lang['chimpx.memberlist_nooptin_ohnoes'] = 'You cannot add a user to your  mailing list without having received their express permission. Would you like to send a confirmation email to the user? Once confirmed  they will start appearing in this list. Please note if you do not send a confirmation email this user will be discarded.';
 
 // lists combo box
 $_lang['chimpx.list_combo_blank'] = 'Choose a list';
@@ -134,3 +146,7 @@ $_lang['chimpx.list_combo_empty'] = 'Choose a list';
 
 // MailChimp API error infos
 $_lang['chimpx.error_info'] = 'Error n°: [[+number]]<br />Message: [[+message]]';
+
+
+//Subscribe Snippet
+$_lang[''] = '';
