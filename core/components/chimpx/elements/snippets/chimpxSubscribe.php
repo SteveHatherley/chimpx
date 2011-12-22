@@ -24,7 +24,7 @@ if ($formTpl != null && $modx->getChunk($formTpl) != null) {
     if (isset($_POST['subscribe'])) {
         if ($api->errorCode != '') {
             if ($debug == true) {
-                $debugOutput .= "code:".$api->errorCode."\n";
+                $debugOutput .= "code:".$api->errorCode."\n"    ;
                 $debugOutput .= "msg :".$api->errorMessage."\n";
                 return $modx->getChunk($formTpl);
             } else {
@@ -71,5 +71,5 @@ if ($formTpl != null && $modx->getChunk($formTpl) != null) {
     return $modx->parseChunk($formTpl, $ph, '[[+',']]');
 } else {
 
-    return $modx->getChunk('mcSubscribeForm');
+    return $modx->getChunk('formTpl');
 }
