@@ -70,5 +70,6 @@ if ($formTpl != null && $modx->getChunk($formTpl) != null) {
     }
     return $modx->parseChunk($formTpl, $ph, '[[+',']]');
 } else {
-    return 'Please specify a valid form chunk.';
+
+    return $modx->getChunk('mcSubscribeForm');
 }
